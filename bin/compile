@@ -9,6 +9,16 @@ set +o hashall
 
 set -o errtrace
 
+echo "======[+jrh]==========================="
+env
+echo "------[~jrh]---------------------------"
+for x in "$@"; do
+  echo " [$x]"
+done
+echo "------[~jrh]---------------------------"
+pwd
+echo "======[-jrh]==========================="
+
 ## show the environment we are building in
 SOURCEY=sourcey
 BUILD_DIR=$1
